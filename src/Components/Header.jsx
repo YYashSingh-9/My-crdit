@@ -1,29 +1,40 @@
-import {
-  Box,
-  IconButton,
-  AppBar,
-  Toolbar,
-  Tabs,
-  Tab,
-  Typography,
-} from "@mui/material";
+import { Box, Button, IconButton, Toolbar, Typography } from "@mui/material";
 import classes from "./Header.module.css";
 import logo from "../assets/logo.png";
-
+import AccountBoxIcon from "@mui/icons-material/AccountBox";
 const Header = () => {
   return (
     <>
       <Box>
-        <Toolbar>
+        <Toolbar className={classes.navbar}>
           <img src={logo} className={classes.logoImg} />
           <Typography
             variant="h4"
-            sx={{ color: "#191414", marginLeft: 2, fontWeight: 700 }}
+            sx={{ color: "#404040", marginLeft: 2, fontWeight: 700 }}
           >
             MY CRDIT
           </Typography>
-          <Box sx={{ marginLeft: "auto" }}>
-            <Typography variant="h3">Account</Typography>
+          <Box
+            sx={{
+              marginLeft: "auto",
+              color: "Black",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <Button
+              variant="contained"
+              sx={{
+                backgroundColor: "#1DB954",
+                ":hover": { bgcolor: "#1DB954" },
+              }}
+            >
+              <Typography variant="h7" mr={1}>
+                ACCOUNT
+              </Typography>
+              <AccountBoxIcon />
+            </Button>
           </Box>
         </Toolbar>
       </Box>
