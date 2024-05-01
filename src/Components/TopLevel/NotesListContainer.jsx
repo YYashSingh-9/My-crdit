@@ -9,6 +9,10 @@ const NotesListContainer = () => {
           height: "100%",
           backgroundColor: "#1DB954",
           borderRadius: "1rem",
+          mt: 2,
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
         }}
       >
         <FilterDiv />
