@@ -1,6 +1,6 @@
-import { Box, Button, IconButton, Toolbar, Typography } from "@mui/material";
+import { Box, Button, Toolbar, Typography } from "@mui/material";
 import classes from "./Header.module.css";
-import logo from "../assets/logo.png";
+import logo from "../../assets/logo.png";
 import AccountBoxIcon from "@mui/icons-material/AccountBox";
 const Header = () => {
   return (
@@ -10,7 +10,12 @@ const Header = () => {
           <img src={logo} className={classes.logoImg} />
           <Typography
             variant="h4"
-            sx={{ color: "#404040", marginLeft: 2, fontWeight: 700 }}
+            sx={{
+              color: "#404040",
+              marginLeft: 2,
+              fontWeight: 700,
+              fontSize: 30,
+            }}
           >
             MY CRDIT
           </Typography>
@@ -31,7 +36,7 @@ const Header = () => {
               }}
             >
               <Typography variant="h7" mr={1}>
-                ACCOUNT
+                DETAILS
               </Typography>
               <AccountBoxIcon />
             </Button>
