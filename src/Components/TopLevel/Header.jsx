@@ -32,6 +32,7 @@ const Header = () => {
               variant="contained"
               sx={{
                 backgroundColor: "#1DB954",
+                borderRadius: "2rem",
                 ":hover": { bgcolor: "#1DB954" },
               }}
             >

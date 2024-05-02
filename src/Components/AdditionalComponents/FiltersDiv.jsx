@@ -7,7 +7,11 @@ const FilterDiv = () => {
     <>
       <Box>
         <Box sx={{ width: "100%", textAlign: "center" }}>
-          <Typography variant="h6" margin={"auto"}>
+          <Typography
+            variant="h5"
+            margin={"auto"}
+            sx={{ fontWeight: 600, color: "white", letterSpacing: "0.1rem" }}
+          >
             FILTER
           </Typography>
         </Box>
@@ -18,9 +22,30 @@ const FilterDiv = () => {
           }}
         >
           <Box className={classes.inpBox}>
-            <input />
+            <Typography
+              variant="h7"
+              marginRight={1}
+              sx={{ fontWeight: 500, color: "white" }}
+            >
+              User ID
+            </Typography>
+            <input placeholder="Enter a user ID" />
             <button>
-              <SearchIcon />
+              <SearchIcon className={classes.searchIcn} />
+            </button>
+          </Box>
+          <Box className={classes.inpBox}>
+            <Typography
+              variant="h7"
+              marginRight={1}
+              marginLeft={5}
+              sx={{ fontWeight: 500, color: "white" }}
+            >
+              Amount
+            </Typography>
+            <input placeholder="Ex- 3,XXX" type="number" />
+            <button>
+              <SearchIcon className={classes.searchIcn} />
             </button>
           </Box>
         </Container>
