@@ -2,6 +2,10 @@ import { Box, Button, Toolbar, Typography } from "@mui/material";
 import classes from "./Header.module.css";
 import logo from "../../assets/logo.png";
 import AccountBoxIcon from "@mui/icons-material/AccountBox";
+// font-family: "Manrope", sans-serif;
+// font-optical-sizing: auto;
+// font-weight: <weight>;
+// font-style: normal;
 const Header = () => {
   return (
     <>
@@ -13,8 +17,9 @@ const Header = () => {
             sx={{
               color: "#404040",
               marginLeft: 2,
-              fontWeight: 700,
+              fontWeight: 800,
               fontSize: 30,
+              fontFamily: "Manrope",
             }}
           >
             MY CRDIT

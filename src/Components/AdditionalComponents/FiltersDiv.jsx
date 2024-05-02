@@ -10,7 +10,11 @@ const FilterDiv = () => {
           <Typography
             variant="h5"
             margin={"auto"}
-            sx={{ fontWeight: 600, color: "white", letterSpacing: "0.1rem" }}
+            sx={{
+              fontWeight: 800,
+              color: "white",
+              fontFamily: "Manrope",
+            }}
           >
             FILTER
           </Typography>
