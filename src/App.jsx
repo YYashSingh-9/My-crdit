@@ -1,10 +1,10 @@
 import Header from "./Components/TopLevel/Header";
-import NotesListContainer from "./Components/TopLevel/NotesListContainer";
+import FilterContainer from "./Components/TopLevel/FilterContainer";
 function App() {
   return (
     <>
       <Header />
-      <NotesListContainer />
+      <FilterContainer />
     </>
   );
 }

@@ -1,5 +1,5 @@
 import { Box } from "@mui/material";
-import classes from "./NotesListContainer.module.css";
+import classes from "./FilterContainer.module.css";
 import FilterDiv from "../AdditionalComponents/FiltersDiv";
 const NotesListContainer = () => {
   return (
